@@ -4,9 +4,8 @@
 <head>
 
     <title>Tanam Sendiri</title>
-    <!--  
+    
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-     -->
     
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -16,60 +15,123 @@
 
 <!-- Header -->
 
-<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
 
-<!--Navigation-->   
-<ul>
-    <li><a href="#"> Beranda </a></li>
-    <li><a href="#"> Bahan </a></li>
-    <li><a href="#"> Cara Tanam </a></li>
-    <li><a href="#"> Referensi </a></li>
-    <li style="float:right"><a href="#"> About </a></li>
-</ul>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/blank_image.jpg">
+        <div class="carousel-caption">
+          <h3>Cara Tanam</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
 
-<!-- Content -->
+      <div class="item">
+        <img src="images/blank_image.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Bahan</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+    </div>
 
-
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Beranda</a></li>
+        <li><a href="#">Bahan</a></li>
+        <li><a href="#">Cara Tanam</a></li>
+        <li><a href="#">Referensi</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- Content -->
 
-<div>
-
-<h1>Artikel</h1>
-
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">CARA MENANAM CABE</div>
+        <div class="panel-body"><img src="images/blank_image.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+        <button onclick="ReadMore()">Lanjut</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">CARA MENANAM TOMAT</div>
+        <div class="panel-body"><img src="images/blank_image.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+        <button onclick="ReadMore()">Lanjut</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">CARA MENANAM BAWANG</div>
+        <div class="panel-body"><img src="images/blank_image.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+        <button onclick="ReadMore()">Lanjut</button></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
 
-<footer>
-
-    <div class="footer">
-   
-    <div id="leftfooter">
-    <h6>Hak cipta CodingMums</h6>        
+<footer class="container-fluid text-center">
+ 
+    <div>
+    <h5>Hak cipta <b>Tanam Sendiri</b></h6>        
     </div>
 
-    <ul>
-
-    <div>
-    <li><h2>Tentangku</h2></li>
+    <div class="row"> 
+    
+    <div class="col-sm-3">
+    <h4>Tentangku</h4></li>
     </div>
     
-    <div id="footerright">
+    <div class="col-sm-3">
     <div id="socmed">
-    <li><h2>Kontakku</h2>
+    <h4>Kontakku</h4>
     <img src="images/whatsapp.png" width="30px" height="30px" />
     <img src="images/facebook.png" width="30px" height="30px" />
     <img src="images/twitter.png" width="30px" height="30px" />
     <img src="images/instagram.png" width="30px" height="30px" />    
     </div>
     </div>
-
-    </ul>
-
+    
     </div>
-                
+
 </footer>
 
 </body>
