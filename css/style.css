@@ -1,26 +1,22 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+div.background {
+    background-image: url(/images/tumbuh.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%; height: 600px;
+}
 
-.navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    background-color: darkgreen;
-    }
-    
-/* Add a gray background color and some padding to the footer */
-footer {
-      background-color: lightgreen;
-      padding: 25px;
-    }
-    
-.carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
+div.transbox {
+    background-color: #ffffff;
+    width: 100%; height: 600px;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
+div.transbox p {
+    line-height: 250px; 
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center; 
+    font-weight: bold;
+    color: #000000;
+
+}
