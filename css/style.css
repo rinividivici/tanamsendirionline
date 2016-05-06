@@ -1,13 +1,13 @@
 div.background {
     background-image: url(/images/tumbuh.jpg);
     background-repeat: no-repeat;
-    background-position: top;
-    width: 100%; height: 600px;
+    background-position: center;
+    width: 100%;
 }
 
 div.transbox {
-    background-color: #ffffff;
-    width: 100%; height: 600px;
+    background-color: white;
+    width: 100%;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
@@ -18,5 +18,6 @@ div.transbox p {
     text-align: center; 
     font-weight: bold;
     color: #000000;
-
 }
+
+/* article */
